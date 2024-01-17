@@ -11,7 +11,7 @@ Asegúrate de tener instalado Node.js en tu sistema antes de ejecutar la aplicac
 1. Clona este repositorio en tu máquina local:
 
     ```bash
-    git clone https://github.com/tu-usuario/adopcion-mascotas.git
+    git clone https://github.com/statick88/adopcion-mascotas.git
     ```
 
 2. Navega a la carpeta del proyecto:
