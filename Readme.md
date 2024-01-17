@@ -1,5 +1,7 @@
 # Aplicación de Adopción de Mascotas 🐶👤
 
+![App en Funcionamiento](img\image.png)
+
 Esta aplicación te permite gestionar un sistema de adopción de mascotas. Puedes agregar nuevos perros rescatados, agregar nuevos adoptantes y realizar adopciones. 
 
 La aplicación sigue un diseño de arquitectura de 3 capas, que es un patrón comúnmente utilizado en el desarrollo web. Este diseño divide la aplicación en tres partes:
