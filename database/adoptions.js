@@ -53,5 +53,10 @@ module.exports = [
     "id": 11,
     "dogId": "1",
     "adopterId": "3"
+  },
+  {
+    "id": 12,
+    "dogId": "3",
+    "adopterId": "2"
   }
 ];
