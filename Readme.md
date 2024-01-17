@@ -65,7 +65,7 @@ adopcion-mascotas/
 Primero, necesitas clonar el repositorio en tu máquina local. Puedes hacerlo con el siguiente comando:
 
 ```bash
-git clone https://github.com/tu-usuario/adopcion-mascotas.git
+git clone https://github.com/statick88/adopcion-mascotas.git
 cd adopcion-mascotas
 ```
 
@@ -91,7 +91,7 @@ npm start
 
 # Terminal 2
 cd frontend
-npm start
+npm run dev
 ```
 
 Ahora, deberías poder ver la aplicación en tu navegador en `http://localhost:3000`.
