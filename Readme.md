@@ -58,7 +58,7 @@ adopcion-mascotas/
 
 - **backend/**: Esta carpeta contiene todos los archivos relacionados con el servidor de la aplicación, incluyendo las rutas, la interacción con la base de datos y el archivo del servidor (`server.js`).
 
-- **README.md**: Este archivo contiene información sobre el proyecto, incluyendo cómo instalar y ejecutar la aplicación.
+- **database/**: Esta carpeta contiene los archivos que simulan la base de datos de la aplicación. Aquí se almacenan los datos de los perros, adoptantes y adopciones en archivos JSON. Esta capa se encarga de interactuar con estos archivos para almacenar y recuperar datos, simulando la interacción con una base de datos real.
 
 ## Implementación Paso a Paso
 
