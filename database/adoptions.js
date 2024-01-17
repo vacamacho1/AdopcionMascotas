@@ -6,13 +6,13 @@ module.exports = [
   },
   {
     "id": 2,
-    "dogId": 2,
-    "adopterId": 2
+    "dogId": "1",
+    "adopterId": "2"
   },
   {
     "id": 3,
     "dogId": "1",
-    "adopterId": "1"
+    "adopterId": "2"
   },
   {
     "id": 4,
@@ -22,12 +22,12 @@ module.exports = [
   {
     "id": 5,
     "dogId": "1",
-    "adopterId": "1"
+    "adopterId": "2"
   },
   {
     "id": 6,
     "dogId": "1",
-    "adopterId": "1"
+    "adopterId": "2"
   },
   {
     "id": 7,
@@ -37,7 +37,7 @@ module.exports = [
   {
     "id": 8,
     "dogId": "1",
-    "adopterId": "1"
+    "adopterId": "2"
   },
   {
     "id": 9,
@@ -46,17 +46,17 @@ module.exports = [
   },
   {
     "id": 10,
-    "dogId": "2",
+    "dogId": "1",
     "adopterId": "2"
   },
   {
     "id": 11,
-    "dogId": "1",
-    "adopterId": "3"
+    "dogId": "2",
+    "adopterId": "1"
   },
   {
     "id": 12,
-    "dogId": "3",
-    "adopterId": "2"
+    "dogId": "4",
+    "adopterId": "4"
   }
 ];
