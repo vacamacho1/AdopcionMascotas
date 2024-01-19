@@ -1,6 +1,10 @@
 // App.jsx
 import { useState, useEffect } from 'react';
 import AdoptionForm from './components/AdoptionForm';
+import AdoptionList from './components/AdoptionList';
+import AvailableList from './components/AvailableList';
+import AddDogForm from './components/AddDogForm';
+import AddAdopterForm from './components/AddAdopterForm';
 
 const App = () => {
   const [dogs, setDogs] = useState([]);
@@ -57,22 +61,26 @@ const App = () => {
       throw error;
     }
   };
+
+  const handleDogSubmit = (dogName) => {
+    setDogs([...dogs, { id: dogs.length + 1, name: dogName }]);
+  };
+
+  const handleAdopterSubmit = (adopterName) => {
+    setAdopters([...adopters, { id: adopters.length + 1, name: adopterName }]);
+  };
+
   return (
     <div className="App">
       <h1>Lista de Adopciones</h1>
-      <ul>
-        {adoptions.map((adoption) => (
-          <li key={adoption.id}>
-            {adoption.dog && typeof adoption.dogId === 'number' && dogs.find((dog) => dog.id === adoption.dogId) &&
-              `Perro: ${dogs.find((dog) => dog.id === adoption.dogId).name}, `
-            }
-            {adoption.adopter && typeof adoption.adopterId === 'number' && adopters.find((adopter) => adopter.id === adoption.adopterId) &&
-              `Adoptante: ${adopters.find((adopter) => adopter.id === adoption.adopterId).name}`
-            }
-          </li>
-        ))}
-      </ul>
-
+      <AdoptionList adoptions={adoptions} dogs={dogs} adopters={adopters} />
+      <h1>Disponibles para adopción</h1>
+      <AvailableList dogs={dogs} adopters={adopters} />
+      <h1>Agregar nuevo perro</h1>
+      <AddDogForm onDogSubmit={handleDogSubmit} />
+      <h1>Agregar nuevo adoptante</h1>
+      <AddAdopterForm onAdopterSubmit={handleAdopterSubmit} />
+      <h1>Nueva Adopción</h1>
       <AdoptionForm dogs={dogs} adopters={adopters} onAdoptionSubmit={handleAdoptionSubmit} />
     </div>
   );
